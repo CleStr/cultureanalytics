@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die Entwicklung der Unternehmenskultur-Forschung – Sternenkarte &amp; Werkliste</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: "Frutiger", "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    main {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #333;
+    }
+
+    /* Druck: jedes Bild auf eine eigene A4-Seite im Querformat */
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+
+      main {
+        max-width: none;
+        padding: 0;
+        gap: 0;
+      }
+
+      figure {
+        page-break-after: always;
+        break-after: page;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      figure:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: none;
+      }
+
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <figure>
+      <img
+        src="20261103_CAL%20Sternenkarte%201_Sternenkarte_dt_A4.png"
+        alt="Sternenkarte: Die Entwicklung der Unternehmenskultur-Forschung von 1900 bis 2020, gegliedert in die Ebenen Aufbau &amp; Funktion, Gruppen &amp; Motivation, Führung &amp; Werte, Organisation &amp; Kultur, Pluralismus &amp; Interpretation, Messung &amp; Diagnostik sowie Agilität &amp; Digitalisierung.">
+    </figure>
+
+    <figure>
+      <img
+        src="20261103_CAL%20Sternenkarte%201_Werkliste_dt_A4.png"
+        alt="Werkliste: Chronologische Übersicht der Werke zur Unternehmenskultur-Forschung mit Jahr, Autor und Titel, von Max Weber (1904/05) bis Kim Scott (2021).">
+    </figure>
+  </main>
+</body>
+</html>
